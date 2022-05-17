@@ -2,14 +2,14 @@ final class Algo {
     private Algo() {
     }
 
-    // O(log(n))
+    // O(log(N))
     public static long gcd(long a, long b) {
         if (b == 0)
             return a;
         return gcd(b, a % b);
     }
 
-    // O(sqrt(n))
+    // O(sqrt(N))
     public static TreeSet<Integer> getDivisors(int n) {
         var st = new TreeSet<Integer>();
         for (int i = 1; i * i <= n; i++) {
@@ -21,7 +21,7 @@ final class Algo {
         return st;
     }
 
-    // O(n(log(log(N)))
+    // O( N * (log(log(N)) )
     public static ArrayList<Integer> primesTill_N(int n) {
         var ans = new ArrayList<Integer>();
         var prime = new ArrayList<Integer>(n + 1);
