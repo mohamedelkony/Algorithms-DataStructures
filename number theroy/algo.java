@@ -9,7 +9,7 @@ final class Algo {
         return gcd(b, a % b);
     }
 
-    // O(log(sqrt(n))
+    // O(sqrt(n))
     public static TreeSet<Integer> getDivisors(int n) {
         var st = new TreeSet<Integer>();
         for (int i = 1; i * i <= n; i++) {
